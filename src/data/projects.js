@@ -1,5 +1,5 @@
-const poster = (id) => `/media/posters/${id}.webp`;
-const video = (id) => `/media/videos/${id}.mp4`;
+const poster = (id) => `${import.meta.env.BASE_URL}media/posters/${id}.webp`;
+const video = (id) => `${import.meta.env.BASE_URL}media/videos/${id}.mp4`;
 
 export const showreel = {
   id: 'reel-01',
@@ -208,7 +208,7 @@ export const films = [
     role: { en: 'Editing · Sound Assistant', es: 'Edición · Asistencia de sonido' },
     platform: 'YouTube',
     url: 'https://www.youtube.com/watch?v=SIZ1yj5o3gY&t=7s',
-    poster: '/media/stills/film-01.webp',
+    poster: `${import.meta.env.BASE_URL}media/stills/film-01.webp`,
   },
   {
     id: 'film-02',
@@ -217,7 +217,7 @@ export const films = [
     role: { en: 'Editing · Sound Editing · Sound Design', es: 'Edición · Edición de sonido · Diseño sonoro' },
     platform: 'YouTube',
     url: 'https://www.youtube.com/watch?v=zzWkKV4JN7A',
-    poster: '/media/stills/film-02.webp',
+    poster: `${import.meta.env.BASE_URL}media/stills/film-02.webp`,
   },
   {
     id: 'film-03',
@@ -226,7 +226,7 @@ export const films = [
     role: { en: 'Editing · Sound Assistant', es: 'Edición · Asistencia de sonido' },
     platform: 'Vimeo',
     url: 'https://vimeo.com/1183864040',
-    poster: '/media/stills/film-03.webp',
+    poster: `${import.meta.env.BASE_URL}media/stills/film-03.webp`,
   },
   {
     id: 'film-04',
@@ -235,7 +235,7 @@ export const films = [
     role: { en: 'Sound Recording · Sound Post-Production', es: 'Grabación de sonido · Postproducción de sonido' },
     platform: 'YouTube',
     url: 'https://www.youtube.com/watch?v=TZupTi3NZqc',
-    poster: '/media/stills/film-04.webp',
+    poster: `${import.meta.env.BASE_URL}media/stills/film-04.webp`,
   },
   {
     id: 'film-05',
@@ -247,7 +247,7 @@ export const films = [
     },
     platform: 'Vimeo',
     url: 'https://vimeo.com/1183834124',
-    poster: '/media/stills/film-05.webp',
+    poster: `${import.meta.env.BASE_URL}media/stills/film-05.webp`,
   },
 ];
 
@@ -256,55 +256,55 @@ export const clients = [
     id: 'client-01',
     name: 'BeCreatives',
     category: { en: 'Production house', es: 'Productora' },
-    src: '/media/clients/client-01.webp',
+    src: `${import.meta.env.BASE_URL}media/clients/client-01.webp`,
   },
   {
     id: 'client-02',
     name: 'Lacoope Films',
     category: { en: 'Production house', es: 'Productora' },
-    src: '/media/clients/client-02.webp',
+    src: `${import.meta.env.BASE_URL}media/clients/client-02.webp`,
   },
   {
     id: 'client-03',
     name: 'Nexo Silvestre',
     category: { en: 'Production house', es: 'Productora' },
-    src: '/media/clients/client-03.webp',
+    src: `${import.meta.env.BASE_URL}media/clients/client-03.webp`,
   },
   {
     id: 'client-04',
     name: 'Altoremo',
     category: { en: 'Production house', es: 'Productora' },
-    src: '/media/clients/client-04.webp',
+    src: `${import.meta.env.BASE_URL}media/clients/client-04.webp`,
   },
   {
     id: 'client-05',
     name: 'Kingdomedia',
     category: { en: 'Publishing project', es: 'Proyecto editorial' },
-    src: '/media/clients/client-05.webp',
+    src: `${import.meta.env.BASE_URL}media/clients/client-05.webp`,
   },
   {
     id: 'client-06',
     name: 'Clasificados',
     category: { en: 'Marketplace', es: 'Marketplace' },
-    src: '/media/clients/client-06.webp',
+    src: `${import.meta.env.BASE_URL}media/clients/client-06.webp`,
   },
   {
     id: 'client-07',
     name: 'Terremoto',
     category: { en: 'Nightclub', es: 'Club nocturno' },
-    src: '/media/clients/client-07.webp',
+    src: `${import.meta.env.BASE_URL}media/clients/client-07.webp`,
   },
   {
     id: 'client-08',
     name: 'Centro Cristiano',
     category: { en: 'Church', es: 'Iglesia' },
-    src: '/media/clients/client-08.webp',
+    src: `${import.meta.env.BASE_URL}media/clients/client-08.webp`,
   },
   {
     id: 'client-09',
     name: 'TrashbinClean',
     category: { en: 'Cleaning company', es: 'Empresa de limpieza' },
-    src: '/media/clients/client-09.webp',
+    src: `${import.meta.env.BASE_URL}media/clients/client-09.webp`,
   },
 ];
 
@@ -315,4 +315,4 @@ export const contactMedia = {
   title: { en: 'Wedding film — recent work', es: 'Wedding film — trabajo reciente' },
 };
 
-export const contactPhoto = '/media/contact-photo.webp';
+export const contactPhoto = `${import.meta.env.BASE_URL}media/contact-photo.webp`;
