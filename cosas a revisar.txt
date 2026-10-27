@@ -1,0 +1,28 @@
+Revisé el portfolio de Salvanoise. Lo visual tiene buena estética y las secciones están bien separadas. Esto es lo que mejoraría, de lo más a lo menos importante:
+
+Errores que conviene corregir ya
+
+“II’m a freelance…” tiene una I de más.
+“DINAMIC” debería ser “DYNAMIC”, y “DOCUMENTALS” debería ser “DOCUMENTARIES”. Para un cliente angloparlante esto le resta profesionalismo.
+Los roles de los cortos mezclan “Role:” y “ROLE:”. Conviene usar siempre la misma forma.
+Los títulos de los cortos están en español y el resto del sitio en inglés. O se agrega una traducción corta (“Outside Is Dangerous”), o se ofrece una versión en español del sitio.
+
+Estructura y conversión
+
+El “About” está casi al final. Arriba sólo aparece “Video Editor 2026”. Agregaría una frase de valor en el hero, por ejemplo: “Short-form & YouTube editor. Videos que retienen.”, y un botón visible de “Let’s work together” desde el principio.
+El contacto es sólo un mail. Sumaría un botón de WhatsApp o Calendly, links a Instagram, YouTube y LinkedIn, y aclararía el idioma y la zona horaria (por ejemplo “Based in Córdoba, AR · works remotely · EN/ES”).
+“Worked with” no muestra nombres claros. Si los creadores tienen audiencia, pondría sus nombres o @ y cantidad de seguidores. Es la prueba social más fuerte que tiene.
+Faltan resultados. Datos como “+X% de retención”, “X millones de views” o “X videos entregados por mes” pesan más que cualquier adjetivo. Un testimonio de cliente también ayuda mucho.
+
+Videos
+
+Hay clips de 1,5 a 1,8 segundos que parecen previews cortados, y no se entiende qué son. Mostraría menos piezas pero más fuertes, cada una con contexto: cliente, plataforma, objetivo y resultado.
+Pondría arriba de todo un showreel de 30 a 60 segundos. Es lo primero que mira un cliente.
+Los “Motion Flyers” son más diseño gráfico que edición de video. Si el foco es editar, irían más abajo o en una sección aparte.
+Conviene revisar que los videos carguen rápido en el celular, porque la mayoría de las visitas vienen del link de Instagram.
+
+Detalles finales
+
+Una sección de servicios y paquetes (por ejemplo “Reels: 4 por semana”, “Podcast clips”, “YouTube long-form”), con precios o un “desde $X”, filtra clientes y ahorra mensajes.
+Explicar el proceso en pasos: brief → primer corte → 2 revisiones → entrega en 48–72 h.
+Un dominio propio como salvanoise.com se ve más profesional que my.canva.site, y Canva permite conectarlo.
