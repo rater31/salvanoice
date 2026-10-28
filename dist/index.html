@@ -9,21 +9,26 @@
     <title>Salvanoise — Short-form & YouTube Video Editor</title>
     <meta
       name="description"
-      content="Salvanoise is Nahuel A. Salva, a freelance video editor crafting short-form, YouTube and documentary videos that hold attention. Editing, sound design and color grading. Based in Córdoba, Argentina — working worldwide."
+      content="Salvanoise is Nahuel A. Salva, a freelance video editor crafting short-form, YouTube and documentary videos that hold attention. Editing, sound design and color grading. Based in Salta, Argentina — working worldwide."
     />
+    <meta name="author" content="Nahuel A. Salva" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <link rel="canonical" href="https://salvanoise.com/" />
+    <link rel="manifest" href="/site.webmanifest" />
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Salvanoise" />
     <meta property="og:title" content="Salvanoise — Short-form & YouTube Video Editor" />
     <meta
       property="og:description"
-      content="Videos that hold attention. Short-form, YouTube and documentary edits by Nahuel A. Salva. Based in Córdoba, AR — working worldwide."
+      content="Videos that hold attention. Short-form, YouTube and documentary edits by Nahuel A. Salva. Based in Salta, AR — working worldwide."
     />
     <meta property="og:url" content="https://salvanoise.com/" />
     <meta property="og:image" content="https://salvanoise.com/media/og-image.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:alt" content="Salvanoise — video editing by Nahuel A. Salva" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:locale:alternate" content="es_AR" />
 
@@ -34,8 +39,12 @@
       content="Videos that hold attention. Short-form, YouTube and documentary edits by Nahuel A. Salva."
     />
     <meta name="twitter:image" content="https://salvanoise.com/media/og-image.jpg" />
+    <meta name="twitter:image:alt" content="Salvanoise — video editing by Nahuel A. Salva" />
 
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -48,30 +57,76 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Nahuel A. Salva",
-        "alternateName": "Salvanoise",
-        "jobTitle": "Video Editor",
-        "description": "Freelance video editor specialized in short-form, YouTube and documentary content.",
-        "email": "mailto:salvanoise@gmail.com",
-        "url": "https://salvanoise.com/",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Córdoba",
-          "addressCountry": "AR"
-        },
-        "knowsLanguage": ["es", "en"],
-        "sameAs": [
-          "https://www.instagram.com/salva.noise/",
-          "https://www.tiktok.com/@salvanoise",
-          "https://www.linkedin.com/in/nahuel-augusto-salva-93bb16353/"
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://salvanoise.com/#website",
+            "url": "https://salvanoise.com/",
+            "name": "Salvanoise",
+            "inLanguage": ["en", "es"],
+            "publisher": { "@id": "https://salvanoise.com/#person" }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://salvanoise.com/#person",
+            "name": "Nahuel A. Salva",
+            "alternateName": "Salvanoise",
+            "jobTitle": "Video Editor",
+            "description": "Freelance video editor specialized in short-form, YouTube and documentary content.",
+            "email": "mailto:salvanoise@gmail.com",
+            "url": "https://salvanoise.com/",
+            "image": "https://salvanoise.com/media/contact-photo.webp",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Salta",
+              "addressCountry": "AR"
+            },
+            "alumniOf": {
+              "@type": "CollegeOrUniversity",
+              "name": "Universidad Nacional de Córdoba"
+            },
+            "knowsLanguage": ["es", "en"],
+            "knowsAbout": [
+              "Video editing",
+              "Short-form video",
+              "YouTube video editing",
+              "Documentary editing",
+              "Sound design",
+              "Color grading",
+              "Motion graphics"
+            ],
+            "sameAs": [
+              "https://www.instagram.com/salva.noise/",
+              "https://www.tiktok.com/@salvanoise",
+              "https://www.linkedin.com/in/nahuel-augusto-salva-93bb16353/"
+            ]
+          },
+          {
+            "@type": "ProfessionalService",
+            "@id": "https://salvanoise.com/#service",
+            "name": "Salvanoise",
+            "url": "https://salvanoise.com/",
+            "logo": "https://salvanoise.com/favicon-512.png",
+            "image": "https://salvanoise.com/media/og-image.jpg",
+            "description": "Video editing for short-form, YouTube and documentary content: editing, sound design and color grading.",
+            "email": "salvanoise@gmail.com",
+            "founder": { "@id": "https://salvanoise.com/#person" },
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Salta",
+              "addressCountry": "AR"
+            },
+            "areaServed": "Worldwide",
+            "availableLanguage": ["es", "en"],
+            "serviceType": ["Video editing", "Short-form video editing", "YouTube video editing", "Documentary editing", "Sound design", "Color grading"]
+          }
         ]
       }
     </script>
-    <script type="module" crossorigin src="/assets/index-Db8NEa3W.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DCOlwbNH.css">
+    <script type="module" crossorigin src="/assets/index-z5-lBWGR.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BO6lh6MJ.css">
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root"></div>
   </body>
 </html>

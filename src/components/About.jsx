@@ -1,6 +1,27 @@
 import { useLang } from '../context/LanguageContext.jsx';
 import { aboutFacts } from '../data/content.js';
+import { contactPhoto } from '../data/projects.js';
+import { site } from '../data/site.js';
 import Reveal from './Reveal.jsx';
+
+const tools = [
+  { name: 'Adobe Premiere Pro', label: 'Pr', bg: '#00005b', fg: '#9999ff' },
+  { name: 'Adobe Photoshop', label: 'Ps', bg: '#001e36', fg: '#31a8ff' },
+  {
+    name: 'Adobe Creative Cloud',
+    bg: '#da1f26',
+    glyph: (
+      <path
+        d="M19 33a7 7 0 0 1-.6-13.97A9 9 0 0 1 35.6 22 5.5 5.5 0 0 1 33 33Z"
+        fill="none"
+        stroke="#fff"
+        strokeWidth="3.2"
+        strokeLinejoin="round"
+      />
+    ),
+  },
+  { name: 'Adobe After Effects', label: 'Ae', bg: '#00005b', fg: '#d291ff' },
+];
 
 export default function About() {
   const { t, pick } = useLang();
@@ -9,6 +30,15 @@ export default function About() {
     <section className="about" id="about" aria-labelledby="about-title">
       <div className="shell about__grid">
         <Reveal className="about__left">
+          <img
+            className="about__photo"
+            src={contactPhoto}
+            alt={site.owner}
+            width="500"
+            height="500"
+            loading="lazy"
+            decoding="async"
+          />
           <p className="eyebrow">{t.about.label}</p>
           <h2 className="about__display" id="about-title">
             {t.about.title}
@@ -33,6 +63,31 @@ export default function About() {
                 </div>
               ))}
             </dl>
+          </Reveal>
+
+          <Reveal delay={120} className="about__tools">
+            <ul className="tools">
+              {tools.map((tool) => (
+                <li className="tool" key={tool.name} title={tool.name}>
+                  <svg viewBox="0 0 48 48" role="img" aria-label={tool.name}>
+                    <rect width="48" height="48" rx="10" fill={tool.bg} />
+                    {tool.glyph ?? (
+                      <text
+                        x="24"
+                        y="31"
+                        textAnchor="middle"
+                        fill={tool.fg}
+                        fontFamily="Arial, Helvetica, sans-serif"
+                        fontSize="20"
+                        fontWeight="700"
+                      >
+                        {tool.label}
+                      </text>
+                    )}
+                  </svg>
+                </li>
+              ))}
+            </ul>
           </Reveal>
         </div>
       </div>

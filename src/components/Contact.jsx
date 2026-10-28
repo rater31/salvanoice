@@ -1,6 +1,6 @@
 import { useLang } from '../context/LanguageContext.jsx';
 import { bookingHref, emailHref, site, whatsappHref } from '../data/site.js';
-import { contactMedia, contactPhoto } from '../data/projects.js';
+import { contactMedia } from '../data/projects.js';
 import AutoplayVideo from './AutoplayVideo.jsx';
 import { ArrowUpRight, Play } from './Icons.jsx';
 import Reveal from './Reveal.jsx';
@@ -36,16 +36,6 @@ export default function Contact({ onPlay }) {
 
         <div className="contact__grid">
           <Reveal className="contact__aside">
-            <img
-              className="contact__photo"
-              src={contactPhoto}
-              alt={site.owner}
-              width="500"
-              height="500"
-              loading="lazy"
-              decoding="async"
-            />
-
             <div className="contact__actions">
               <a className="contact__action" href={emailHref}>
                 <span className="contact__action-copy">

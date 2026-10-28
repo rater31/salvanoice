@@ -123,7 +123,7 @@ export default function Work({ onPlay }) {
     <section className="work" id="work" aria-labelledby="work-title">
       <div className="shell">
         <Reveal className="work__masthead">
-          <h2 className="work__display" id="work-title">
+          <h2 className="work__display " id="work-title">
             {t.work.label}
           </h2>
           <div className="work__intro">

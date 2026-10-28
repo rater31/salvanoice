@@ -299,6 +299,21 @@ video {
   letter-spacing: -0.02em;
 }
 
+.logo {
+  overflow: hidden;
+}
+
+/* PNG has an opaque white background and lots of padding: crop it and flip to light-on-dark */
+.logo__img {
+  display: block;
+  width: 72px;
+  height: 72px;
+  max-width: none;
+  margin: -16px -9px;
+  filter: invert(1) hue-rotate(180deg);
+  mix-blend-mode: screen;
+}
+
 .logo__dot {
   width: 8px;
   height: 8px;
@@ -926,7 +941,9 @@ body.nav-open {
   line-height: 0.94;
   letter-spacing: -0.032em;
   text-transform: uppercase;
-  text-align: right;
+  text-align: left;
+  margin:  auto 0px  auto 0px; 
+  
 }
 
 .work__intro {
@@ -940,6 +957,7 @@ body.nav-open {
   font-weight: 500;
   line-height: 1.25;
   letter-spacing: -0.015em;
+
 }
 
 .work__desc {
@@ -1565,6 +1583,14 @@ body.nav-open {
   gap: clamp(42px, 7vw, 112px);
 }
 
+.about__photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: clamp(24px, 3vw, 36px);
+  filter: grayscale(0.2) contrast(1.02);
+}
+
 .about__display {
   max-width: 14ch;
   margin-top: 18px;
@@ -1634,6 +1660,30 @@ body.nav-open {
   color: var(--ink-soft);
 }
 
+.about__tools {
+  margin-top: clamp(26px, 3vw, 36px);
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tool svg {
+  display: block;
+  width: 44px;
+  height: 44px;
+  transition: transform 0.4s var(--ease);
+}
+
+.tool:hover svg {
+  transform: translateY(-3px);
+}
+
 /* ---------- contact ---------- */
 
 .contact {
@@ -1688,15 +1738,6 @@ body.nav-open {
   display: flex;
   flex-direction: column;
   gap: clamp(22px, 3vw, 32px);
-}
-
-.contact__photo {
-  width: min(100%, 260px);
-  aspect-ratio: 1;
-  object-fit: cover;
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  filter: grayscale(0.2) contrast(1.02);
 }
 
 .contact__actions {
@@ -2455,10 +2496,6 @@ body.nav-open {
   .about__grid,
   .contact__grid {
     grid-template-columns: 1fr;
-  }
-
-  .contact__photo {
-    width: min(100%, 220px);
   }
 }
 

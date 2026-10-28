@@ -1,7 +1,6 @@
 import { useCallback, useState } from 'react';
 import Header from './components/Header.jsx';
 import Hero from './components/Hero.jsx';
-import Showreel from './components/Showreel.jsx';
 import Clients from './components/Clients.jsx';
 import Work from './components/Work.jsx';
 import Motion from './components/Motion.jsx';
@@ -28,12 +27,11 @@ export default function App() {
       <Header />
       <main id="main">
         <Hero />
-        <Showreel onPlay={open} />
+        {/* <Showreel onPlay={open} /> */}
         <Clients />
         <Work onPlay={open} />
         <Motion onPlay={open} />
         <ShortFilms />
-       
         <About />
         <Contact onPlay={open} />
       </main>

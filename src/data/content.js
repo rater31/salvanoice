@@ -30,17 +30,17 @@ export const processSteps = [
     number: '04',
     title: { en: 'Delivery', es: 'Entrega' },
     desc: {
-      en: 'Final files in 48–72 hours: vertical, horizontal, captions and platform-ready exports.',
-      es: 'Archivos finales en 48–72 horas: vertical, horizontal, subtítulos y exportaciones listas para publicar.',
+      en: 'Final files in 24–72 hours: vertical, horizontal, captions and platform-ready exports.',
+      es: 'Archivos finales en 24–72 horas: vertical, horizontal, subtítulos y exportaciones listas para publicar.',
     },
-    meta: { en: '48–72 h · all formats', es: '48–72 h · todos los formatos' },
+    meta: { en: '24–72 h · all formats', es: '24–72 h · todos los formatos' },
   },
 ];
 
 export const aboutFacts = [
   {
     label: { en: 'Based in', es: 'Base' },
-    value: { en: 'Córdoba, Argentina · UTC−3', es: 'Córdoba, Argentina · UTC−3' },
+    value: { en: 'Salta, Argentina · UTC−3', es: 'Salta, Argentina · UTC−3' },
   },
   {
     label: { en: 'Languages', es: 'Idiomas' },
@@ -48,7 +48,7 @@ export const aboutFacts = [
   },
   {
     label: { en: 'Tools', es: 'Herramientas' },
-    value: { en: 'Premiere Pro · After Effects · Audition · DaVinci Resolve', es: 'Premiere Pro · After Effects · Audition · DaVinci Resolve' },
+    value: { en: 'Premiere Pro · After Effects · Photoshop · Adobe Cloud', es: 'Premiere Pro · After Effects · Photoshop · Adobe Cloud' },
   },
   {
     label: { en: 'Education', es: 'Formación' },

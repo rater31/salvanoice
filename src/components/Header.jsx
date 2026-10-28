@@ -66,8 +66,11 @@ export default function Header() {
         <span className="scroll-progress" ref={progressRef} aria-hidden="true" />
         <div className="shell site-header__inner">
           <a className="logo" href="#top" onClick={close}>
-            <span className="logo__dot" aria-hidden="true" />
-            <span>Salvanoise</span>
+            <img
+              className="logo__img"
+              src={`${import.meta.env.BASE_URL}media/Instagram%202%20.0.png`}
+              alt="Salvanoise"
+            />
           </a>
 
           <nav className="nav" aria-label={t.nav.label}>

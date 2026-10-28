@@ -37,7 +37,7 @@ export const copy = {
       primary: 'Let’s work together',
       secondary: 'Watch the showreel',
       secondaryMeta: '0:47',
-      meta: ['Based in Córdoba, AR · UTC−3', 'Works remotely · EN / ES', 'Available Nov 2026'],
+      meta: ['Based in Salta, AR · UTC−3', 'Works remotely · EN / ES', 'Available  2026'],
     },
     showreel: {
       label: 'Showreel',
@@ -58,15 +58,15 @@ export const copy = {
     },
     stats: [
       { value: '3+', label: 'years editing' },
-      { value: '9', label: 'clients & teams' },
+      { value: '+9', label: 'clients & teams' },
       { value: '18', label: 'selected pieces' },
-      { value: '48–72h', label: 'short-form delivery' },
+      { value: '24–72h', label: 'Project-based delivery' },
     ],
     work: {
       label: 'My works',
       title: 'Fewer pieces. More context.',
       desc:
-        'Every piece lists the format, the platform it was cut for and what it had to do. Client names and performance data are shared per project on request.',
+        'Each piece includes client, platform and objective. Performance data shared on request.',
       contextLabel: 'Context',
       reelsLabel: 'Dynamic reels',
       podcastsLabel: 'Podcast clips / Social ads',
@@ -109,7 +109,7 @@ export const copy = {
       label: 'Motion flyers',
       title: 'Design & animation, not editing',
       desc:
-        'Graphic-led pieces: typography, rhythm and sound. This section sits lower and apart because the craft is design and animation, not footage editing.',
+        'From concept to screen — AI-generated visuals, After Effects animation and immersive sound design combined into a single promotional piece.',
       note: 'Three selected flyers.',
     },
     process: {
@@ -125,7 +125,7 @@ export const copy = {
       p1:
         'I create dynamic, high-retention videos through storytelling, pacing, color grading and sound design. Over the past 3+ years I’ve worked on commercial and digital content, from vertical reels to documentary portraits.',
       p2:
-        'I hold a Technical Degree in Audiovisual Production from the National University of Córdoba, and I work in Adobe Premiere Pro, After Effects, Audition and DaVinci Resolve. The goal is always the same: an engaging, professional video built for the platform it lives on.',
+        'I hold a Technical Degree in Audiovisual Production from the National University of Córdoba, and I work in Adobe Premiere Pro, After Effects and Audition. The goal is always the same: an engaging, professional video built for the platform it lives on.',
       quote: 'A good edit is invisible. A great one is felt.',
       factsLabel: 'At a glance',
     },
@@ -137,20 +137,20 @@ export const copy = {
       email: 'Write me an email',
       book: 'Book a 15-min intro call',
       whatsapp: 'Message me on WhatsApp',
-      availability: 'Available for select projects — Nov 2026',
+      availability: 'Available for select projects ',
       socialsLabel: 'Elsewhere',
       details: [
-        { label: 'Based in', value: 'Córdoba, AR · UTC−3' },
+        { label: 'Based in', value: 'Salta, AR · UTC−3' },
         { label: 'Working', value: 'Remotely, worldwide' },
         { label: 'Languages', value: 'Spanish (native) · English (professional)' },
         { label: 'Response', value: 'Within 24 h · Mon–Fri' },
       ],
       signature: 'Nahuel A. Salva',
-      mediaLabel: 'A recent wedding film, cut start to finish.',
+      mediaLabel: '',
     },
     footer: {
       tagline:
-        'Short-form, YouTube and documentary editing from Córdoba, Argentina — for clients anywhere.',
+        'Short-form, YouTube and documentary editing from Salta, Argentina — for clients anywhere.',
       navLabel: 'Sitemap',
       socialLabel: 'Social',
       rights: 'All rights reserved.',
@@ -200,7 +200,7 @@ export const copy = {
       primary: 'Trabajemos juntos',
       secondary: 'Ver el showreel',
       secondaryMeta: '0:47',
-      meta: ['Base en Córdoba, AR · UTC−3', 'Trabajo remoto · ES / EN', 'Disponible nov 2026'],
+      meta: ['Base en Salta, AR · UTC−3', 'Trabajo remoto · ES / EN', 'Disponible  2026'],
     },
     showreel: {
       label: 'Showreel',
@@ -221,15 +221,15 @@ export const copy = {
     },
     stats: [
       { value: '3+', label: 'años editando' },
-      { value: '9', label: 'clientes y equipos' },
+      { value: '+9', label: 'clientes y equipos' },
       { value: '18', label: 'piezas seleccionadas' },
-      { value: '48–72h', label: 'entrega short-form' },
+      { value: '24–72h', label: 'Entrega basada en proyectos' },
     ],
     work: {
       label: 'Mis trabajos',
       title: 'Menos piezas. Más contexto.',
       desc:
-        'Cada pieza indica formato, plataforma y objetivo. Los nombres de clientes y los datos de rendimiento se comparten por proyecto a pedido.',
+        'En cada caso incluye el cliente, la plataforma y el objetivo. Los datos de desempeño se comparten a solicitud.',
       contextLabel: 'Contexto',
       reelsLabel: 'Reels dinámicos',
       podcastsLabel: 'Clips de podcast / Social ads',
@@ -271,8 +271,7 @@ export const copy = {
     motion: {
       label: 'Motion flyers',
       title: 'Diseño y animación, no edición',
-      desc:
-        'Piezas con foco gráfico: tipografía, ritmo y sonido. Esta sección va más abajo y separada porque el oficio es diseño y animación, no edición de material filmado.',
+      desc:'Del concepto a la pantalla: imágenes generadas por IA, animación con After Effects y diseño de sonido envolvente se combinan en una única pieza promocional.',
       note: 'Tres flyers seleccionados.',
     },
     process: {
@@ -300,20 +299,20 @@ export const copy = {
       email: 'Escribime un mail',
       book: 'Agendar una llamada de 15 min',
       whatsapp: 'Escribime por WhatsApp',
-      availability: 'Disponible para proyectos selectos — nov 2026',
+      availability: 'Disponible para proyectos selectos — 2026',
       socialsLabel: 'En otros lados',
       details: [
-        { label: 'Base', value: 'Córdoba, AR · UTC−3' },
+        { label: 'Base', value: 'Salta, AR · UTC−3' },
         { label: 'Modalidad', value: 'Remoto, todo el mundo' },
         { label: 'Idiomas', value: 'Español (nativo) · Inglés (profesional)' },
         { label: 'Respuesta', value: 'En 24 h · lun–vie' },
       ],
       signature: 'Nahuel A. Salva',
-      mediaLabel: 'Un wedding film reciente, editado de principio a fin.',
+      mediaLabel: '',
     },
     footer: {
       tagline:
-        'Edición short-form, YouTube y documental desde Córdoba, Argentina — para clientes en cualquier lugar.',
+        'Edición short-form, YouTube y documental desde Salta, Argentina — para clientes en cualquier lugar.',
       navLabel: 'Mapa del sitio',
       socialLabel: 'Redes',
       rights: 'Todos los derechos reservados.',

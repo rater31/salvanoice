@@ -7,8 +7,8 @@ export const site = {
   },
   email: 'salvanoise@gmail.com',
   location: {
-    en: 'Córdoba, Argentina',
-    es: 'Córdoba, Argentina',
+    en: 'Salta, Argentina',
+    es: 'Salta, Argentina',
   },
   timezone: 'UTC−3',
   languages: {
@@ -16,8 +16,8 @@ export const site = {
     es: 'Español (nativo) · Inglés (profesional)',
   },
   availability: {
-    en: 'Available for select projects — Nov 2026',
-    es: 'Disponible para proyectos selectos — nov 2026',
+    en: 'Available for select projects —  2026',
+    es: 'Disponible para proyectos selectos —  2026',
   },
   responseTime: {
     en: 'Replies within 24 h · Mon–Fri',
