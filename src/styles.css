@@ -1585,10 +1585,19 @@ body.nav-open {
 
 .about__photo {
   display: block;
-  width: 100%;
+  /* margin: auto; */
+  /* background-color: white; */
+  width: 70%;
   height: auto;
   margin-bottom: clamp(24px, 3vw, 36px);
   filter: grayscale(0.2) contrast(1.02);
+}
+
+@media screen and (max-width: 600px) {
+  .about__photo {
+    width: min(60%, 240px);
+    margin: 0 auto clamp(24px, 3vw, 36px);
+  }
 }
 
 .about__display {
@@ -1744,6 +1753,7 @@ body.nav-open {
   display: grid;
   gap: 8px;
   max-width: 430px;
+
 }
 
 .contact__action {
@@ -1754,6 +1764,7 @@ body.nav-open {
   padding: 14px 16px;
   border: 1px solid var(--line);
   border-radius: 12px;
+  background-color: #e7e7ea36;
   transition:
     background 0.25s ease,
     border-color 0.25s ease;
@@ -1827,6 +1838,7 @@ body.nav-open {
   border-radius: 999px;
   font-size: 10.5px;
   color: var(--ink-soft);
+  background-color: #e7e7ea36;
   transition:
     border-color 0.25s ease,
     background 0.25s ease;
@@ -1835,6 +1847,11 @@ body.nav-open {
 .contact__social-list a:hover {
   border-color: var(--line-strong);
   background: var(--surface-2);
+}
+
+.contact__social-icon {
+  display: inline-flex;
+  color: var(--ink);
 }
 
 .contact__social-name {
@@ -2355,7 +2372,7 @@ body.nav-open {
 
 .btn svg,
 .contact__action > svg,
-.contact__social-list a svg,
+.contact__social-list a > svg,
 .mobile-menu__nav a svg,
 .footer__mail svg,
 .footer__top svg,
@@ -2365,7 +2382,7 @@ body.nav-open {
 
 .btn:hover > svg:last-child,
 .contact__action:hover > svg,
-.contact__social-list a:hover svg,
+.contact__social-list a:hover > svg,
 .mobile-menu__nav a:hover svg,
 .mobile-menu__nav a:focus-visible svg,
 .footer__mail:hover svg,

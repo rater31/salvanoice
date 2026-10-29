@@ -2,10 +2,12 @@ import { useLang } from '../context/LanguageContext.jsx';
 import { bookingHref, emailHref, site, whatsappHref } from '../data/site.js';
 import { contactMedia } from '../data/projects.js';
 import AutoplayVideo from './AutoplayVideo.jsx';
-import { ArrowUpRight, Play } from './Icons.jsx';
+import { ArrowUpRight, Instagram, LinkedIn, Play, TikTok, YouTube } from './Icons.jsx';
 import Reveal from './Reveal.jsx';
 
 const isExternal = (url) => url.startsWith('http');
+
+const socialIcons = { instagram: Instagram, tiktok: TikTok, youtube: YouTube, linkedin: LinkedIn };
 
 export default function Contact({ onPlay }) {
   const { t, lang, pick } = useLang();
@@ -45,7 +47,12 @@ export default function Contact({ onPlay }) {
                 <ArrowUpRight size={14} />
               </a>
 
-              <a className="contact__action" href={whatsappHref}>
+              <a
+                className="contact__action"
+                href={whatsappHref}
+                target={isExternal(whatsappHref) ? '_blank' : undefined}
+                rel={isExternal(whatsappHref) ? 'noopener noreferrer' : undefined}
+              >
                 <span className="contact__action-copy">
                   <small>{t.contact.whatsapp}</small>
                   <strong>WhatsApp</strong>
@@ -53,13 +60,13 @@ export default function Contact({ onPlay }) {
                 <ArrowUpRight size={14} />
               </a>
 
-              <a className="contact__action" href={bookingHref}>
+              {/* <a className="contact__action" href={bookingHref}>
                 <span className="contact__action-copy">
                   <small>{t.contact.book}</small>
                   <strong>15 min</strong>
                 </span>
                 <ArrowUpRight size={14} />
-              </a>
+              </a> */}
             </div>
 
             <dl className="contact__details">
@@ -74,13 +81,20 @@ export default function Contact({ onPlay }) {
             <div className="contact__socials">
               <p className="eyebrow">{t.contact.socialsLabel}</p>
               <ul className="contact__social-list">
-                {site.socials.map((social) => (
+                {site.socials.map((social) => {
+                  const SocialIcon = socialIcons[social.id];
+                  return (
                   <li key={social.id}>
                     <a
                       href={social.url}
                       target={isExternal(social.url) ? '_blank' : undefined}
                       rel={isExternal(social.url) ? 'noopener noreferrer' : undefined}
                     >
+                      {SocialIcon && (
+                        <span className="contact__social-icon">
+                          <SocialIcon size={14} />
+                        </span>
+                      )}
                       <span className="contact__social-name">{social.label}</span>
                       <span className="contact__social-handle">
                         {typeof social.handle === 'string' ? social.handle : pick(social.handle)}
@@ -88,7 +102,8 @@ export default function Contact({ onPlay }) {
                       <ArrowUpRight size={12} />
                     </a>
                   </li>
-                ))}
+                  );
+                })}
               </ul>
             </div>
           </Reveal>

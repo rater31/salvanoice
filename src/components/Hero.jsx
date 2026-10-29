@@ -29,11 +29,11 @@ export default function Hero() {
                 {t.ui.startProject}
                 <ArrowUpRight size={13} />
               </a>
-              <a className="btn btn--ghost" href="#showreel">
+              {/* <a className="btn btn--ghost" href="#showreel">
                 <Play size={13} />
                 {t.hero.secondary}
                 <span className="btn__meta">{t.hero.secondaryMeta}</span>
-              </a>
+              </a> */}
             </div>
           </div>
 

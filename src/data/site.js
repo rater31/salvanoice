@@ -30,10 +30,10 @@ export const site = {
     autoplayPreviews: true,
   },
 
-  // TODO: add your WhatsApp number as a full international link, e.g.
-  // whatsappUrl: 'https://wa.me/5493511234567'
-  // Until then the WhatsApp button falls back to a pre-filled email.
-  whatsappUrl: '',
+  // WhatsApp link (+54 9 3876 38-7860) with a pre-filled message.
+  whatsappUrl: `https://wa.me/5493876387860?text=${encodeURIComponent(
+    'Hola Nahuel! Vi tu web y me gustaría hablar sobre un proyecto.'
+  )}`,
 
   // TODO: replace with your Calendly / Cal.com link. Until then, the
   // "Book a call" button falls back to a pre-filled email.
