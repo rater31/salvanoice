@@ -13,8 +13,11 @@ export default function Footer() {
       <div className="shell footer__inner">
         <div className="footer__brand">
           <a className="logo" href="#top">
-            <span className="logo__dot" aria-hidden="true" />
-            <span>Salvanoise</span>
+            <img
+              className="logo__img"
+              src={`${import.meta.env.BASE_URL}media/Instagram%202%20.0.png`}
+              alt="Salvanoise"
+            />
           </a>
           <p className="footer__tagline">{t.footer.tagline}</p>
           <a className="footer__mail" href={emailHref}>
@@ -36,13 +39,21 @@ export default function Footer() {
           <p>
             © {year} {site.name}. {t.footer.rights}
           </p>
-          <p>{t.footer.built}</p>
+          <a
+            className="footer__made-by"
+            href="https://onisolutions.com.ar"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Powered by Oni
+          </a>
           <a className="footer__top" href="#top">
             {t.footer.backToTop}
             <ArrowUp size={12} />
           </a>
         </div>
       </div>
+    
     </footer>
   );
 }
